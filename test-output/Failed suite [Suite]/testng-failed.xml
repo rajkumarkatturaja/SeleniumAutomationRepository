@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExtendReports"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC003_AccountLogin_DataDriven">
+        <methods>
+          <include name="setup"/>
+          <include name="verify_Login" invocation-numbers="1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.TC003_AccountLogin_DataDriven -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
